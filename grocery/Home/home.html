@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery</title>
+    <link rel="stylesheet" href="home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header-1">
+      <div class="logo">
+        <h3>MG<span>MART</span></h3>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="search here..." class="search-input" />
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-2">
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#category">Category</a></li>
+          <li><a href="#product">Products</a></li>
+          <li><a href="#deal">Deal</a></li>
+          <li><a href="#contact">Conatct</a></li>
+        </ul>
+      </div>
+
+      <div class="buttons">
+        <a class="cart" id="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart
+        </a>
+
+        <a class="button" id="button">
+          <i class="fa-regular fa-user"></i>
+          Sign up
+        </a>
+      </div>
+    </div>
+
+    <!-- pop up window start-->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <div class="heading">
+          <div class="close-btn">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <div class="logo">
+            <h3 style="padding: 9px; height: 45px">MG<span>MART</span></h3>
+          </div>
+        </div>
+
+        <form>
+          <div class="data-field">
+            <div class="name">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+          </div>
+
+
+          <div class="data-field">
+            <input type="email" placeholder="Enter your email" />
+          </div>
+
+          <div class="data-field">
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <div class="personal-info">
+            <div class="data-field">
+              <h5>Date of Birth</h5>
+              <div class="dob">
+                <select name="day" id="day"></select>
+                <select name="month" id="month"></select>
+                <select name="year" id="year"></select>
+              </div>
+            </div>
+
+            <div class="data-field">
+              <h5>Gender</h5>
+              <div class="gender">
+                <div class="genders">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="male" />
+                </div>
+
+                <div class="genders m1">
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="female" />
+                </div>
+
+                <div class="genders m1">
+                  <label for="other">Other</label>
+                  <input type="radio" name="gender" id="other" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sign-btn">Sign up</div>
+
+          <div class="log-in-link" id="log-in-link">
+            <a href="#"> Already have an account?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- pop up window end-->
+
+    <!-- popip-2 start -->
+    <div class="popup-2">
+      <div class="content">
+        <div class="heading">
+          <div class="close-btn-2">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <div class="logo">
+            <h3 style="padding: 9px; height: 45px">MG<span>MART</span></h3>
+          </div>
+        </div>
+
+        <form>
+          <div class="data-field">
+            <input type="text" placeholder="enter your email or mob. number" />
+            <input type="text" placeholder="enter your password" />
+          </div>
+
+          <div class="pass">forgot password?</div>
+
+          <div class="login-btn">Login</div>
+
+          <div class="sign-up-link" id="sign-up-link">
+            <span>Not a member?</span><a href="#">signup</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- popip-2 end -->
+
+    <div class="container">
+      <!-- home start -->
+      <div class="home" id="home">
+        <div class="left">
+          <img src="/Home/img/hero3.avif" alt="" />
+        </div>
+        <div class="right">
+          <!-- <div class="right-content"> -->
+          <span>fresh and organic</span>
+          <h3>your daily need products</h3>
+          <br /><br />
+          <a href="#" class="butn">get started</a>
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- home end -->
+
+      <!-- banner start -->
+      <div class="banners">
+        <div class="banner">
+          <img src="/Home/img/banner.avif" alt="" />
+          <div class="banner-content">
+            <h3>special offer</h3>
+            <p>upto 45% off</p>
+            <br />
+            <a href="#" class="butn">check out</a>
+          </div>
+        </div>
+        <div class="banner">
+          <img src="/Home/img/banner-8.jpg" alt="" />
+          <div class="banner-content">
+            <h3>limited offer</h3>
+            <p>upto 50% off</p>
+            <br />
+            <a href="#" class="butn">check out</a>
+          </div>
+        </div>
+      </div>
+      <!-- banner end -->
+
+      <!-- category start -->
+      <div class="category" id="category">
+        <h1 class="heading">Shop by <span>category</span></h1>
+
+        <div class="category-content">
+
+          <a href="/category/cat1-html.html">
+        <div class="box">
+          <div class="content">
+            <img src="/Home/img/c1.avif" alt="" />
+            <p>Fruits & Vegetables</p>
+          </div>
+        </div></a>
+
+        <div class="box">
+          <div class="content">
+            <img src="/Home/img/c1.avif" alt="" />
+            <p>Snacks & Beverages</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="/Home/img/c1.avif" alt="" />
+            <p>Packaged Food</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="/Home/img/c1.avif" alt="" />
+            <p>Personal & Baby Care</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="/Home/img/c1.avif" alt="" />
+            <p>Staples</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="/Home/img/c1.avif" alt="" />
+            <p>Dairy & Non-veg</p>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <img src="/Home/img/c1.avif" alt="" />
+            <p>Home & Kitchen</p>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <!-- category end -->
+
+      <!-- product start -->
+      <div class="product" id="product">
+        <h1 class="heading">latest <span>products</span></h1>
+        <div class="box-container">
+          <div class="box">
+            <span class="discount">33%</span>
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="/Home/img/product-1.avif" alt="" />
+            <h3>organic apple</h3>
+            <!-- <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div> -->
+            <div class="price">Rs.50 <span> Rs.60 </span></div>
+            <!-- <div class="quantity">
+              <span>quantity : </span>
+              <input type="number" min="1" max="100" value="1" />
+              <span> /kg </span>
+            </div> -->
+            <br />
+            <a href="#" class="butn">add to cart</a>
+          </div>
+
+          <div class="box">
+            <span class="discount">23%</span>
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="/Home/img/product-2.avif" alt="" />
+            <h3>banana</h3>
+            <!-- <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div> -->
+            <div class="price">Rs.40 <span> Rs.50 </span></div>
+            <!-- <div class="quantity">
+              <span>quantity : </span>
+              <input type="number" min="1" max="100" value="1" />
+              <span> /kg </span>
+            </div> -->
+            <br />
+            <a href="#" class="butn">add to cart</a>
+          </div>
+          <div class="box">
+            <span class="discount">33%</span>
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="/Home/img/product-3.avif" alt="" />
+            <h3>Sweet potato</h3>
+            <!-- <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div> -->
+            <div class="price">Rs.50 <span> Rs.60 </span></div>
+            <!-- <div class="quantity">
+              <span>quantity : </span>
+              <input type="number" min="1" max="100" value="1" />
+              <span> /kg </span>
+            </div> -->
+            <br />
+            <a href="#" class="butn">add to cart</a>
+          </div>
+          <div class="box">
+            <span class="discount">33%</span>
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="/Home/img/product-4.avif" alt="" />
+            <h3>corns</h3>
+            <!-- <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div> -->
+            <div class="price">Rs.50 <span> Rs.60 </span></div>
+            <!-- <div class="quantity">
+              <span>quantity : </span>
+              <input type="number" min="1" max="100" value="1" />
+              <span> /kg </span>
+            </div> -->
+            <br />
+            <a href="#" class="butn">add to cart</a>
+          </div>
+          <div class="box">
+            <span class="discount">33%</span>
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="/Home/img/product-5.avif" alt="" />
+            <h3>milk</h3>
+            <!-- <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div> -->
+            <div class="price">Rs.50 <span> Rs.60 </span></div>
+            <!-- <div class="quantity">
+              <span>quantity : </span>
+              <input type="number" min="1" max="100" value="1" />
+              <span> /kg </span>
+            </div> -->
+            <br />
+            <a href="#" class="butn">add to cart</a>
+          </div>
+          <div class="box">
+            <span class="discount">33%</span>
+            <div class="icons">
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-share"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img src="/Home/img/product-6.avif" alt="" />
+            <h3>Breads</h3>
+            <!-- <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div> -->
+            <div class="price">Rs.50 <span> Rs.60 </span></div>
+            <!-- <div class="quantity">
+              <span>quantity : </span>
+              <input type="number" min="1" max="100" value="1" />
+              <span> /kg </span>
+            </div> -->
+            <br />
+            <a href="#" class="butn">add to cart</a>
+          </div>
+          <!-- <div class="box">
+              <span class="discount">33%</span>
+              <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+              </div>
+              <img src="/Home/img/product-1.avif" alt="">
+              <h3>organic apple</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">Rs.50 <span> Rs.60 </span></div>
+              <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="100" value="1">
+                <span> /kg </span>
+              </div><br>
+              <a href="#" class="butn">add to cart</a>
+            </div>
+              <div class="box">
+              <span class="discount">33%</span>
+              <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+              </div>
+              <img src="/Home/img/product-1.avif" alt="">
+              <h3>organic apple</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <div class="price">Rs.50 <span> Rs.60 </span></div>
+              <div class="quantity">
+                <span>quantity : </span>
+                <input type="number" min="1" max="100" value="1">
+                <span> /kg </span>
+              </div>
+              <br>
+              <a href="#" class="butn">add to cart</a>
+            </div> -->
+        </div>
+      </div>
+      <!-- product end -->
+
+      <!-- deal start -->
+      <div class="deal" id="deal">
+        <div class="deal-content">
+          <h3 class="title">deal of the day</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
+            dolore dolor eveniet adipisci ipsum, quisquam hic tempora veniam at
+            aspernatur.
+          </p>
+
+          <div class="count-down">
+            <div class="box">
+              <h3 id="days">00</h3>
+              <span>day</span>
+            </div>
+            <div class="box">
+              <h3 id="hour">00</h3>
+              <span>hour</span>
+            </div>
+            <div class="box">
+              <h3 id="minute">00</h3>
+              <span>minute</span>
+            </div>
+            <div class="box">
+              <h3 id="second">00</h3>
+              <span>second</span>
+            </div>
+          </div>
+          <br />
+          <a href="#" class="butn">check the deal</a>
+        </div>
+      </div>
+      <!-- deal end -->
+
+      <!-- contact start -->
+      <div class="contact" id="contact">
+        <h1 class="heading">contact <span>us</span></h1>
+        <form action="">
+          <div class="inputBox">
+            <input type="text" placeholder="name" />
+            <input type="text" placeholder="email" />
+          </div>
+
+          <div class="inputBox">
+            <input type="number" placeholder="number" />
+            <input type="text" placeholder="subject" />
+          </div>
+
+          <textarea placeholder="message" id="" cols="30" rows="10"></textarea>
+          <a href="#" class="butn">send the message</a>
+        </form>
+      </div>
+      <!-- contact end -->
+
+      <!-- footer start -->
+      <div class="footer">
+        <div class="content">
+          <div class="left">
+            <div class="logo">
+              <h3>MG<span>MART</span></h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              neque in voluptatem unde.
+            </p>
+            <div class="media">
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="box">
+              <h3>our locations</h3>
+              <ul>
+                <li><a href="#">India</a></li>
+                <li><a href="#">USA</a></li>
+                <li><a href="#">France</a></li>
+                <li><a href="#">Japan</a></li>
+                <li><a href="#">Russia</a></li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h3>quick links</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#category">Category</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#deal">Deal</a></li>
+                <li><a href="#contact">Conatct</a></li>
+              </ul>
+            </div>
+
+            <div class="box">
+              <h3>download app</h3>
+              <ul>
+                <li><a href="#">Google play</a></li>
+                <li><a href="#">window xp</a></li>
+                <li><a href="#">app store</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">&copy;copyright reserved</div>
+      </div>
+      <!-- footer end -->
+    </div>
+
+    <script src="home.js"></script>
+  </body>
+</html>

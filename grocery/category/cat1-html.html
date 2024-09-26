@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category</title>
+    <link rel="stylesheet" href="cat1-css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <div class="header">
+      <div class="logo">
+        <h2>MG<span>MART</span></h2>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="search here..." />
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <div class="cart btn">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </div>
+
+      <div class="sign-up btn" id="sign-up">
+        <i class="fa-regular fa-user"></i>
+        Sign up
+      </div>
+    </div>
+    <!-- header start -->
+
+    <!-- pop up window start-->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <div class="heading">
+          <div class="close-btn">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <div class="logo">
+            <h3 style="padding: 9px; height: 45px">MG<span>MART</span></h3>
+          </div>
+        </div>
+
+        <form>
+          <div class="data-field">
+            <div class="name">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
+          </div>
+
+          <div class="data-field">
+            <input type="email" placeholder="Enter your email" />
+          </div>
+
+          <div class="data-field">
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          <div class="personal-info">
+            <div class="data-field">
+              <h5>Date of Birth</h5>
+              <div class="dob">
+                <select name="day" id="day"></select>
+                <select name="month" id="month"></select>
+                <select name="year" id="year" aria-placeholder="year"></select>
+              </div>
+            </div>
+
+            <div class="data-field">
+              <h5>Gender</h5>
+              <div class="gender">
+                <div class="genders">
+                  <label for="male">Male</label>
+                  <input type="radio" name="gender" id="male" />
+                </div>
+
+                <div class="genders m1">
+                  <label for="female">Female</label>
+                  <input type="radio" name="gender" id="female" />
+                </div>
+
+                <div class="genders m1">
+                  <label for="other">Other</label>
+                  <input type="radio" name="gender" id="other" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sign-btn">Sign up</div>
+
+          <div class="log-in-link" id="log-in-link">
+            <a href="#"> Already have an account?</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- pop up window end-->
+
+    <!-- popip-2 start -->
+    <div class="popup-2">
+      <div class="content">
+        <div class="heading">
+          <div class="close-btn-2">
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <div class="logo">
+            <h3 style="padding: 9px; height: 45px">MG<span>MART</span></h3>
+          </div>
+        </div>
+
+        <form>
+          <div class="data-field">
+            <input type="text" placeholder="enter your email or mob. number" />
+            <input type="text" placeholder="enter your password" />
+          </div>
+
+          <div class="pass">forgot password?</div>
+
+          <div class="login-btn">Login</div>
+
+          <div class="sign-up-link" id="sign-up-link">
+            <span>Not a member?</span><a href="#">signup</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- popip-2 end -->
+    
+    <!-- category start -->
+
+     <div class="category">
+       
+      <div class="main-categories">
+        <ul>
+          <li><a href="#">Fruits & Vegetables</a></li>
+          <li><a href="#">Snacks & Beverages</a></li>
+          <li><a href="#">Packaged Food</a></li>
+          <li><a href="#">Personal & Baby Care</a></li>
+          <li><a href="#">Staples</a></li>
+          <li><a href="#">Dairy & Non-veg</a></li>
+          <li><a href="#">Home & Kitchen</a></li>
+        </ul>
+      </div>
+
+      <div class="sub-categories">
+        <div class="category-menu">
+
+        </div>
+
+        <div class="products">
+          
+        </div>
+      </div>
+
+     </div>
+
+    <!-- category end -->
+    
+
+    <script src="cat1-js.js"></script>
+  </body>
+</html>
